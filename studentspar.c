@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <omp.h>
 
 #include "country.h"
 #include "analysis.h"
@@ -11,8 +12,8 @@ int main() {
 
 	clock_t start = clock();
 
-	// analyzeCities(country);
-	// analyzeRegions(country);
+	analyzeCities(country);
+	analyzeRegions(country);
 	analyzeCountry(country);
 
 	clock_t end = clock();

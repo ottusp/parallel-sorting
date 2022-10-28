@@ -11,8 +11,8 @@ int main() {
 
 	clock_t start = clock();
 
-	// analyzeCities(country);
-	// analyzeRegions(country);
+	analyzeCities(country);
+	analyzeRegions(country);
 	analyzeCountry(country);
 
 	clock_t end = clock();
